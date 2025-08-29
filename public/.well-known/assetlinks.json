@@ -1,0 +1,17 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls",
+            "delegate_permission/common.get_login_creds"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.sastosulavexpress.shop",
+            "sha256_cert_fingerprints": [
+                "3B:4B:02:26:52:BF:E3:69:D8:BF:9A:79:EF:36:90:BB:33:1C:05:54:47:47:B2:86:69:1A:29:C2:98:20:9D:E4",
+                "DD:C1:47:B3:DB:11:A6:36:E3:36:0D:23:50:1D:FA:58:56:A2:80:B0:2C:8C:B9:AE:3F:88:55:73:28:C8:96:7B",
+                "70:F8:3C:D2:F3:51:81:E2:30:A8:81:89:6C:88:0E:CB:2E:03:5E:7E:0F:9F:FC:90:E7:E3:F2:EF:43:E0:31:F8"
+            ]
+        }
+    }
+]

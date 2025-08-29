@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appID": "829D45NWAM.com.sastosulavexpress.shop",
+                "components": [
+                    {
+                        "/": "/*",
+                        "exclude": false
+                    }
+                ]
+            }
+        ]
+    }
+}
