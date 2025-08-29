@@ -5,9 +5,14 @@ export const About = () => {
         <h3 className="font-times font-medium text-xl tracking-[0.5rem]">
           LOCATION
         </h3>
-        <div className="text-sm text-muted-foreground space-y-1">
-          <p>埼玉県さいたま市中央区大戸1-34-10</p>
-        </div>
+        <a
+          href="https://maps.app.goo.gl/Xp1TPQA2r7t1QHVD9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-muted-foreground hover:underline"
+        >
+          埼玉県さいたま市中央区大戸1-34-10
+        </a>
       </section>
       <section className="md:space-y-6 space-y-3">
         <h3 className="font-times font-medium text-xl tracking-[0.5rem]">
@@ -25,10 +30,10 @@ export const About = () => {
           CONTACT
         </h3>
         <div className="text-sm text-muted-foreground space-y-1">
-          <a className="block" href={'tel:048-865-3396'}>
+          <a className="block hover:underline" href={'tel:048-865-3396'}>
             048-865-3396
           </a>
-          <a className="block" href={'mailto:me.pkr@gmail.com'}>
+          <a className="block hover:underline" href={'mailto:me.pkr@gmail.com'}>
             me.pkr@gmail.com
           </a>
         </div>

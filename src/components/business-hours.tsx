@@ -1,3 +1,5 @@
+import { Highlighter } from './ui/highlighter'
+
 export const BusinessHours = () => {
   return (
     <section className="text-center space-y-5">
@@ -17,7 +19,9 @@ export const BusinessHours = () => {
       <p className="font-dosis font-medium">
         Hours and closed days may change, so please call{' '}
         <a href="tel:048-865-3396" className="underline font-semibold">
-          048-865-3396
+          <Highlighter isView action="underline" color="#abe5fc">
+            048-865-3396
+          </Highlighter>
         </a>{' '}
         before visiting.
       </p>

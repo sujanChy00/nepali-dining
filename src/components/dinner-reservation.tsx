@@ -1,4 +1,5 @@
 import { Link } from '@tanstack/react-router'
+import { Highlighter } from './ui/highlighter'
 import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
 
 export const DinnerReservation = () => {
@@ -12,7 +13,9 @@ export const DinnerReservation = () => {
           to="/reservation"
           className="underline decoration-muted-foreground underline-offset-4 font-semibold"
         >
-          reservations
+          <Highlighter color="#abe5fc" isView action="underline">
+            reservations
+          </Highlighter>
         </Link>{' '}
         on{' '}
         <Tooltip>
@@ -24,7 +27,9 @@ export const DinnerReservation = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Tablelog
+              <Highlighter color="#797152" isView action="underline">
+                Tablelog
+              </Highlighter>
             </a>
           </TooltipTrigger>
           <TooltipContent>visit Tablelog to make a reservation</TooltipContent>

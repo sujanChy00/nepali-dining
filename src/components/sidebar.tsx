@@ -10,6 +10,7 @@ import { Link } from '@tanstack/react-router'
 import { Menu } from 'lucide-react'
 import { useState } from 'react'
 import { buttonVariants } from './ui/button'
+import { Image } from './ui/image'
 
 export const Sidebar = () => {
   const [opened, setOpend] = useState(false)
@@ -27,7 +28,7 @@ export const Sidebar = () => {
           </DrawerTitle>
         </DrawerHeader>
         <section className="size-full flex justify-center items-center p-3 pb-8">
-          <div className="grid md:grid-cols-4 grid-cols-2 justify-center gap-6">
+          <div className="grid grid-cols-3 justify-center gap-3">
             <Link
               onClick={() => setOpend(false)}
               to="/menu"
@@ -58,7 +59,7 @@ export const Sidebar = () => {
             >
               2. Make a Reservation
             </Link>
-            <Link
+            {/* <Link
               onClick={() => setOpend(false)}
               className={cn(
                 buttonVariants({
@@ -72,19 +73,24 @@ export const Sidebar = () => {
               to="/takeout"
             >
               3. Order takeout
-            </Link>
+            </Link> */}
             <a
               className={cn(
                 buttonVariants({
                   variant: 'outline',
                 }),
-                'line-clamp-1 font-dosis',
+                'line-clamp-1 font-dosis flex items-center',
               )}
               href="https://new.sastosulavexpress.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              4. Sasto Sulav
+              <Image
+                src="/logo_transparent.png"
+                alt="logo"
+                className="size-4 rounded-xl border-accent"
+              />{' '}
+              Sasto Sulav
             </a>
           </div>
         </section>

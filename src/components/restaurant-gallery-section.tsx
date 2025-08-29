@@ -9,27 +9,27 @@ import {
 import { Image } from './ui/image'
 
 const carouselImages = [
-  'https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1684052283223-Z354HG5Y7K0NEA8P50UL/image-asset.jpeg?format=750w',
-  'https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1684314843692-FPSM7KC5I990XZVPPJB5/image-asset.jpeg?format=750w',
-  'https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1682287091581-MPORAIRG2OC5OOYM7MRA/image-asset.jpeg?format=750w',
-  'https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1681766910499-XUDFIYOL2D9THFP4P4U2/image-asset.jpeg?format=750w',
+  'https://tblg.k-img.com/restaurant/images/Rvw/280910/150x150_square_dd36ffcabf19313e23ae69070a36ed82.jpg',
+  'https://tblg.k-img.com/restaurant/images/Rvw/280910/150x150_square_1956d50a263cb16511a724fdbbfd8dc6.jpg',
+  'https://tblg.k-img.com/restaurant/images/Rvw/288992/150x150_square_8098922ef12e0266a89586cf2298bc39.jpg',
+  'https://tblg.k-img.com/restaurant/images/Rvw/288992/150x150_square_c5f06b0f5c3af25be3b85a533f6b332d.jpg',
 ]
 
 const galleries = [
   {
-    src: 'https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1566969629497-O0TBF6EOQ7TEJI3B1857/yangskitchen_gallery-01.png?format=300w',
+    src: 'https://tblg.k-img.com/restaurant/images/Rvw/280910/150x150_square_58a56cb5e0f092409743b301018405a1.jpg',
     ratio: 4 / 3,
   },
   {
-    src: 'https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1566969701220-EL03IRBN1SJ9NLSMVA0B/yangskitchen_gallery-02.png?format=300w',
+    src: 'https://tblg.k-img.com/restaurant/images/Rvw/283858/150x150_square_975db6ac54218b830a5a2f37df8d7b43.jpg',
     ratio: 3 / 4,
   },
   {
-    src: 'https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1566969844624-8JWNJQZEYC7AD8RIMDY7/yangskitchen_gallery-03.png?format=300w',
+    src: 'https://tblg.k-img.com/restaurant/images/Rvw/280910/150x150_square_a35f5e99f6d5a620d391020f88a10751.jpg',
     ratio: 4 / 3,
   },
   {
-    src: 'https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1566970037121-WBVPWBZAE2ZELF5ML20L/yangskitchen_gallery-04.png?format=300w',
+    src: 'https://tblg.k-img.com/restaurant/images/Rvw/280910/150x150_square_1956d50a263cb16511a724fdbbfd8dc6.jpg',
     ratio: 3 / 4,
   },
 ]

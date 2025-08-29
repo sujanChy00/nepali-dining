@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router'
 import { Sidebar } from './sidebar'
+import { Highlighter } from './ui/highlighter'
 import { Image } from './ui/image'
 
 export const Header = () => {
@@ -10,7 +11,7 @@ export const Header = () => {
         to="/"
         className="font-atma text-4xl font-medium text-center text-nowrap block"
       >
-        Nepali Dining
+        <Highlighter color="#abe5fc">Nepali Dining</Highlighter>
       </Link>
 
       <section className="font-dosis md:flex hidden font-medium uppercase  flex-col ml-auto text-gray-600">
