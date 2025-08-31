@@ -23,8 +23,8 @@ export const Footer = () => {
         <a className="hover:underline" href="tel:048-865-3396">
           048-865-3396
         </a>{' '}
-        <a className="hover:underline" href="mailto:me.pkr@gmail.com">
-          me.pkr@gmail.com
+        <a className="hover:underline" href="mailto:jbaral@sierrajapan.com ">
+          jbaral@sierrajapan.com
         </a>
       </div>
       <a href="" target="_blank" rel="noopener noreferrer">
