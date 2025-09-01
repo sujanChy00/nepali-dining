@@ -6,6 +6,7 @@ import { Container } from '@/components/container'
 import { DefaultCatchBoundary } from '@/components/default-catch-boundry'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
+import { NavigationProgress } from '@/components/navigation-progress'
 import { NotFound } from '@/components/not-found'
 import { Sidebar } from '@/components/sidebar'
 import { TooltipProvider } from '@/components/ui/tooltip'
@@ -56,7 +57,7 @@ export const Route = createRootRoute({
         sizes: '16x16',
         href: '/favicon-16x16.png',
       },
-      { rel: 'manifest', href: '/site.webmanifest', color: '#fffff' },
+      { rel: 'manifest', href: '/manifest.json', color: '#fffff' },
       { rel: 'icon', href: '/favicon.ico' },
     ],
   }),
@@ -71,12 +72,13 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   const ctx = Route.useRouteContext() as { language: LANGUAGE_KEY }
   const lang = ctx?.language ?? 'jp'
   return (
-    <html lang="en">
+    <html lang={lang}>
       <head>
         <HeadContent />
       </head>
       <body>
         <LanguageProvider defaultLanguage={lang as LANGUAGE_KEY}>
+          <NavigationProgress />
           <TooltipProvider>
             <Container className="py-10">
               <Header /> {children} <Footer />
