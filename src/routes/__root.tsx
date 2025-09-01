@@ -35,8 +35,6 @@ export const Route = createRootRoute({
       },
       ...seo({
         title: 'Nepali Dining',
-        description:
-          'Experience the authentic taste of Nepal in the heart of Japan. Our restaurant serves traditional Nepali cuisine prepared by expert chefs, offering a perfect blend of flavors and spices. From classNameic momos to rich curries, we bring the warmth and hospitality of Nepal to your dining experience.',
       }),
     ],
     links: [
