@@ -1,12 +1,11 @@
 import { Link } from '@tanstack/react-router'
-import { Sidebar } from './sidebar'
 import { Highlighter } from './ui/highlighter'
 import { Image } from './ui/image'
 
 export const Header = () => {
   return (
-    <div className="grid grid-cols-3 justify-between items-center">
-      <div />
+    <div className="md:grid grid-cols-3 justify-between items-center">
+      <div className="md:block hidden" />
       <Link
         to="/"
         className="font-atma text-4xl font-medium text-center text-nowrap block"
@@ -44,7 +43,7 @@ export const Header = () => {
             3 Order takeout
           </Link> */}
           <a
-            className="py-1 flex items-center gap-1 hover:underline"
+            className="py-1 flex items-center gap-1 hover:underline font-bold text-tertiary"
             href="https://new.sastosulavexpress.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -54,13 +53,10 @@ export const Header = () => {
               alt="logo"
               className="size-5 rounded-xl border-accent"
             />
-            Sasto Sulav
+            Sasto Sulav Express
           </a>
         </div>
       </section>
-      <div className="md:hidden flex ml-auto">
-        <Sidebar />
-      </div>
     </div>
   )
 }

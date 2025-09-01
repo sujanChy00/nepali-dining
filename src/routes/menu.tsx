@@ -1,5 +1,4 @@
 import { ItemViewer } from '@/components/item-viewer'
-import { AspectRatio } from '@/components/ui/aspect-ratio'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { Image } from '@/components/ui/image'
@@ -308,19 +307,21 @@ function RouteComponent() {
                 <h2 className="text-2xl font-bold text-center mb-8 text-accent-foreground">
                   {section.title}
                 </h2>
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-6">
                   {section.items.map((item, itemIndex) => (
                     <ItemViewer key={itemIndex} item={item}>
                       <Tooltip>
                         <TooltipTrigger>
                           <Card className="p-0 block overflow-hidden cursor-pointer">
-                            <div className="grid grid-cols-12">
+                            <div className="base:grid items-center grid-cols-12">
                               <section className="col-span-5">
-                                <AspectRatio ratio={16 / 9}>
-                                  <Image src="/logo.png" alt={item.name} />
-                                </AspectRatio>
+                                <Image
+                                  className="base:aspect-square aspect-video"
+                                  src="/logo.png"
+                                  alt={item.name}
+                                />
                               </section>
-                              <CardContent className="space-y-1.5 col-span-7 pt-2">
+                              <CardContent className="space-y-1.5 col-span-7 pt-2 base:pb-0 pb-2">
                                 <div className="flex gap-3">
                                   <h3 className="font-inter line-clamp-1">
                                     {item.name}

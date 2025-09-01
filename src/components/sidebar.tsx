@@ -7,7 +7,7 @@ import {
 } from '@/components/ui/drawer'
 import { cn } from '@/lib/utils'
 import { Link } from '@tanstack/react-router'
-import { Menu } from 'lucide-react'
+import { ArrowRight, Menu } from 'lucide-react'
 import { useState } from 'react'
 import { buttonVariants } from './ui/button'
 import { Image } from './ui/image'
@@ -16,7 +16,14 @@ export const Sidebar = () => {
   const [opened, setOpend] = useState(false)
   return (
     <Drawer open={opened} onOpenChange={setOpend}>
-      <DrawerTrigger>
+      <DrawerTrigger
+        className={cn(
+          buttonVariants({
+            size: 'icon',
+          }),
+          'fixed bottom-4 right-4 rounded-full',
+        )}
+      >
         <Menu />
       </DrawerTrigger>
       <DrawerContent>
@@ -28,7 +35,7 @@ export const Sidebar = () => {
           </DrawerTitle>
         </DrawerHeader>
         <section className="size-full flex justify-center items-center p-3 pb-8">
-          <div className="grid grid-cols-3 justify-center gap-3">
+          <div className="grid grid-cols-12 justify-center gap-3">
             <Link
               onClick={() => setOpend(false)}
               to="/menu"
@@ -36,10 +43,10 @@ export const Sidebar = () => {
                 buttonVariants({
                   variant: 'outline',
                 }),
-                'line-clamp-1 font-dosis',
+                'line-clamp-1 col-span-6 font-dosis',
               )}
               activeProps={{
-                className: 'underline text-primary',
+                className: 'text-white bg-primary',
               }}
             >
               1. View Our Menu
@@ -50,10 +57,10 @@ export const Sidebar = () => {
                 buttonVariants({
                   variant: 'outline',
                 }),
-                'line-clamp-1 font-dosis',
+                'line-clamp-1 col-span-6 font-dosis',
               )}
               activeProps={{
-                className: 'underline text-primary',
+                className: 'text-white bg-primary',
               }}
               to="/reservation"
             >
@@ -79,7 +86,7 @@ export const Sidebar = () => {
                 buttonVariants({
                   variant: 'outline',
                 }),
-                'line-clamp-1 font-dosis flex items-center',
+                'line-clamp-1 font-dosis flex items-center col-span-12 border-dashed border-2 border-black',
               )}
               href="https://new.sastosulavexpress.com/"
               target="_blank"
@@ -90,7 +97,7 @@ export const Sidebar = () => {
                 alt="logo"
                 className="size-4 rounded-xl border-accent"
               />{' '}
-              Sasto Sulav
+              Sasto Sulav Express <ArrowRight />
             </a>
           </div>
         </section>

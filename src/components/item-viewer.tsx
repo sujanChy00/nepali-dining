@@ -6,6 +6,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from './ui/dialog'
+import { Highlighter } from './ui/highlighter'
 import { Image } from './ui/image'
 
 interface Props extends React.ComponentProps<typeof DialogTrigger> {
@@ -29,7 +30,9 @@ export const ItemViewer = ({ item, ...rest }: Props) => {
       >
         <DialogHeader className="border-b py-6">
           <DialogTitle className="text-center font-atma font-medium">
-            {item.name}
+            <Highlighter action="underline" color="#abe5fc">
+              {item.name}
+            </Highlighter>
           </DialogTitle>
         </DialogHeader>
         <div>

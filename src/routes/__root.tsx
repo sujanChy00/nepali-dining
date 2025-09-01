@@ -7,6 +7,7 @@ import { DefaultCatchBoundary } from '@/components/default-catch-boundry'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { NotFound } from '@/components/not-found'
+import { Sidebar } from '@/components/sidebar'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { seo } from '@/lib/seo'
 import { LANGUAGE_COOKIE_KEY, LanguageProvider } from '@/providers'
@@ -82,6 +83,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             <Container className="py-10">
               <Header /> {children} <Footer />
             </Container>
+            <div className="md:hidden block">
+              <Sidebar />
+            </div>
           </TooltipProvider>
         </LanguageProvider>
         {process.env.ENV === 'development' ? (
