@@ -43,17 +43,21 @@ export const Header = () => {
             3 Order takeout
           </Link> */}
           <a
-            className="py-1 flex items-center gap-1 hover:underline font-bold text-tertiary"
-            href="https://new.sastosulavexpress.com/"
+            className=""
+            href={process.env.SASTO_SULAV_URL}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              src="/logo_transparent.png"
-              alt="logo"
-              className="size-5 rounded-xl border-accent"
-            />
-            Sasto Sulav Express
+            <Highlighter color="#abe5fc" action="underline">
+              <div className="p-1 flex items-center gap-1 hover:underline">
+                <Image
+                  src="/logo_transparent.png"
+                  alt="logo"
+                  className="size-5 rounded-xl border-accent"
+                />
+                Sasto Sulav Express
+              </div>
+            </Highlighter>
           </a>
         </div>
       </section>
