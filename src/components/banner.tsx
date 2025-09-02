@@ -7,9 +7,9 @@ export const Banner = () => {
     <motion.div
       initial={{
         opacity: 0,
-        y: 100,
+        scale: 1.1,
       }}
-      animate={{ opacity: 1, y: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
       <AspectRatio ratio={16 / 9}>
